@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chetan Yalla | MERN Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Chetan Yalla - MERN Stack Developer and IT undergraduate building full-stack web apps with React.js, Node.js, MongoDB, Python and Gen AI.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Apply the saved theme before first paint to avoid a flash -->
+  <script>
+    try {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('portfolio-theme') || 'dark');
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">CY</span>
+        <span>Chetan<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span> Open for MERN Stack &amp; Full Stack Developer Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <br><span class="gradient-text">Chetan Yalla</span>
+          </h1>
+          <p class="hero-subtitle">
+            MERN Stack Developer &amp; Information Technology Undergraduate
+          </p>
+          <p class="hero-description">
+            Passionate about crafting scalable web applications, real-time interactive software, and AI-driven solutions. Experienced in MongoDB, Express.js, React.js, Node.js, and Python.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-laptop-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://linkedin.com/in/yalla-chetan-a43bb7386" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/chetancoder02" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:chetan.yalla02@gmail.com" class="social-icon" title="Email" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+919440219483" class="social-icon" title="Phone" aria-label="Phone">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-avatar-card">
+            <div class="hero-avatar-circle">
+              <span>CY</span>
+              <img src="101.jpeg" alt="Chetan Yalla" class="hero-avatar-photo" onerror="this.style.display='none'">
+            </div>
+            <span class="hero-card-kicker">PORTFOLIO PROFILE</span>
+            <h3 class="hero-card-name">Chetan Yalla</h3>
+            <p class="hero-card-role">B.Tech IT Student @ SITE</p>
+            <span class="hero-card-status"><span class="hero-card-status-dot"></span> Open to opportunities</span>
+            <div class="hero-card-tags">
+              <span class="tag">MERN Stack</span>
+              <span class="tag">Python</span>
+              <span class="tag">Gen AI</span>
+            </div>
+          </div>
+
+          <div class="floating-stat-card stat-1">
+            <div class="stat-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <div class="stat-num">8.5 CGPA</div>
+              <div class="stat-label">B.Tech IT</div>
+            </div>
+          </div>
+
+          <div class="floating-stat-card stat-2">
+            <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+            <div>
+              <div class="stat-num">500+</div>
+              <div class="stat-label">CodeChef Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HIGHLIGHT STATS ==================== -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <h3 class="gradient-text">4+</h3>
+          <p>Full-Stack / MERN Projects</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="gradient-text">5+</h3>
+          <p>Certifications Earned</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="gradient-text">8.5</h3>
+          <p>Academic CGPA (SITE)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT & EDUCATION ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Background</span>
+          <h2 class="section-title">About &amp; Education</h2>
+          <p class="section-description">A glimpse into my academic journey and technical foundation in Information Technology.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon-header">
+              <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+              <h3>Who I Am</h3>
+            </div>
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">
+              I am an Information Technology undergraduate at Sasi Institute of Technology and Engineering. With a strong passion for web development and software engineering, I specialize in building MERN stack web applications and AI-enhanced software.
+            </p>
+            <p style="color: var(--text-muted);">
+              I enjoy solving real-world problems through clean code, scalable architecture, and continuous learning in modern tech stacks like React.js, Express.js, Node.js, MongoDB, and Python.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <div class="card-icon-header">
+              <div class="icon-box"><i class="fas fa-university"></i></div>
+              <h3>Education</h3>
+            </div>
+
+            <div class="edu-timeline">
+              <div class="edu-item">
+                <h4 class="edu-degree">Bachelor of Technology - Information Technology</h4>
+                <p class="edu-inst">Sasi Institute of Technology and Engineering</p>
+                <div class="edu-meta">
+                  <span><i class="far fa-calendar-alt"></i> Sep 2024 - 2028 (Present)</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Tadepalligudem, AP</span>
+                </div>
+                <span class="cpi-pill">CGPA: 8.5 / 10.0</span>
+              </div>
+
+              <div class="edu-item">
+                <h4 class="edu-degree">Intermediate</h4>
+                <p class="edu-inst">Sasi Junior College</p>
+                <div class="edu-meta">
+                  <span><i class="far fa-calendar-alt"></i> 2022 - 2024</span>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <h4 class="edu-degree">Schooling</h4>
+                <p class="edu-inst">Sasi English Medium School</p>
+                <div class="edu-meta">
+                  <span><i class="far fa-calendar-alt"></i> Completed in 2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS (rendered from script.js) ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-description">Technologies, frameworks, and developer tools I work with.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <noscript><p style="color: var(--text-muted);">Enable JavaScript to see the skills list.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS (rendered from script.js) ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">Explore some of the full-stack and MERN applications I've engineered.</p>
+        </div>
+
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="mern">MERN Stack</button>
+          <button class="filter-btn" data-filter="ai">Gen AI</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <noscript><p style="color: var(--text-muted);">Enable JavaScript to see the projects.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS & ACHIEVEMENTS ==================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Credentials &amp; Milestones</span>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <p class="section-description">Recognitions, technical certifications, and leadership activities.</p>
+        </div>
+
+        <div class="certs-achieve-grid">
+          <div class="certs-card">
+            <div class="card-icon-header">
+              <div class="icon-box"><i class="fas fa-certificate"></i></div>
+              <h3>Certifications</h3>
+            </div>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-badge-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="cert-info">
+                  <h4>Mobile App Development Using Flutter</h4>
+                  <p>Infosys</p>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge-icon"><i class="fas fa-database"></i></div>
+                <div class="cert-info">
+                  <h4>Introduction to Data Mining</h4>
+                  <p>Infosys</p>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge-icon"><i class="fas fa-filter"></i></div>
+                <div class="cert-info">
+                  <h4>Introduction to DataPreproccesing</h4>
+                  <p>Infosys</p>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge-icon"><i class="fas fa-trophy"></i></div>
+                <div class="cert-info">
+                  <h4>Certification in 1000 problems solving in codechef</h4>
+                  <p>CodeChef</p>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge-icon"><i class="fas fa-code"></i></div>
+                <div class="cert-info">
+                  <h4>C certificate by APAC computers</h4>
+                  <p>APAC Computers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="achieve-card">
+            <div class="card-icon-header">
+              <div class="icon-box"><i class="fas fa-award"></i></div>
+              <h3>Achievements</h3>
+            </div>
+
+            <div class="achieve-list">
+              <div class="achieve-item">
+                <div class="cert-badge-icon"><i class="fas fa-trophy"></i></div>
+                <div class="achieve-info">
+                  <h4>Participated in 36 hours Hackathon in SRM University</h4>
+                  <p>Hackathon participation and problem-solving experience.</p>
+                </div>
+              </div>
+
+              <div class="achieve-item">
+                <div class="cert-badge-icon"><i class="fas fa-flag"></i></div>
+                <div class="achieve-info">
+                  <h4>Successfully Organized Anveshana Techno Cultural Fest 2026</h4>
+                  <p>Event coordination and campus cultural leadership.</p>
+                </div>
+              </div>
+
+              <div class="achieve-item">
+                <div class="cert-badge-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="achieve-info">
+                  <h4>Smart India Hackathon Participant</h4>
+                  <p>Participated in national-level problem-solving challenge.</p>
+                </div>
+              </div>
+
+              <div class="achieve-item">
+                <div class="cert-badge-icon"><i class="fas fa-medal"></i></div>
+                <div class="achieve-info">
+                  <h4>Top-50 teams</h4>
+                  <p>Recognized among the top-performing teams.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-description">Feel free to reach out for collaborations, job opportunities, or questions!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Contact Information</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+              Whether you have a question about my work or want to discuss full-stack &amp; MERN developer roles, my inbox is always open.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="contact-details">
+                    <h5>Email Address</h5>
+                    <p>chetan.yalla02@gmail.com</p>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="chetan.yalla02@gmail.com"><i class="far fa-copy"></i> Copy</button>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                  <div class="contact-details">
+                    <h5>Phone Number</h5>
+                    <p>+91 9440219483</p>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+919440219483"><i class="far fa-copy"></i> Copy</button>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                  <div class="contact-details">
+                    <h5>LinkedIn Profile</h5>
+                    <p>linkedin.com/in/yalla-chetan-a43bb7386</p>
+                  </div>
+                </div>
+                <a href="https://linkedin.com/in/yalla-chetan-a43bb7386" target="_blank" rel="noopener noreferrer" class="copy-btn"><i class="fas fa-external-link-alt"></i> Visit</a>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon"><i class="fab fa-github"></i></div>
+                  <div class="contact-details">
+                    <h5>GitHub Profile</h5>
+                    <p>github.com/chetancoder02</p>
+                  </div>
+                </div>
+                <a href="https://github.com/chetancoder02" target="_blank" rel="noopener noreferrer" class="copy-btn"><i class="fas fa-external-link-alt"></i> Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem;">Send a Message</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Enter your full name" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="Enter your email address" autocomplete="email" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Type your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit" style="width: 100%; justify-content: center;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">CY</span>
+        <span>Chetan<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <p class="footer-copy">
+        &copy; 2026 Chetan Yalla. Built with HTML5, CSS3 &amp; JavaScript. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
